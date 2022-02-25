@@ -1,0 +1,2 @@
+<tdd-menu *ngIf="menu$ | async as menu; else wait" [menu]="menu"></tdd-menu>
+<ng-template #wait><p>please wait...</p></ng-template>
