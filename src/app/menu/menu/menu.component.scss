@@ -1,0 +1,11 @@
+:host {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+
+  padding: 1rem;
+
+  tdd-offer {
+    margin: 0.5rem 0;
+  }
+}

@@ -7,7 +7,7 @@ import {Offer} from "../offer";
 const SAMPLE_OFFER: Offer = {
   flavor: "Chocolate",
   size: "S",
-  price_euros: 3
+  priceEuros: 3
 }
 
 describe('OfferComponent', () => {
