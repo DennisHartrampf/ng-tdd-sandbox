@@ -16,19 +16,20 @@ describe(MenuProviderService.name, () => {
   ));
 
   it('pulls menu via HTTP request', () => {
-    let service = TestBed.inject(MenuProviderService);
+    const service = TestBed.inject(MenuProviderService);
 
     let menu: Menu | null = null;
     service.menu$.subscribe(
       fromService => menu = fromService
     );
 
-    let http = TestBed.inject(HttpTestingController);
+    const http = TestBed.inject(HttpTestingController);
 
     http.expectOne(environment.api.menu).flush(
       SAMPLE_MENU
     );
 
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     expect(menu!).toEqual(SAMPLE_MENU);
   });
 });

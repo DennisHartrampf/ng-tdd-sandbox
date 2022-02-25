@@ -26,7 +26,7 @@ describe('MenuWrapperComponent', () => {
   );
 
   it('gets menu from a service and shows it', () => {
-    let fixture = MockRender(MenuWrapperComponent);
+    const fixture = MockRender(MenuWrapperComponent);
 
     currentMenu$.next(SAMPLE_MENU);
     fixture.detectChanges()
