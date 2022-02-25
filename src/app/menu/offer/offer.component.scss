@@ -1,0 +1,15 @@
+:host {
+  display: flex;
+
+  border: 2px solid black;
+  padding: 1rem;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+  button {
+    background-color: blue;
+    color: white;
+  }
+
+
+}
