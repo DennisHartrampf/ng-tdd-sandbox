@@ -1,0 +1,17 @@
+[
+  {
+    "flavor": "Vanilla",
+    "size": "M",
+    "priceEuros": 2
+  },
+  {
+    "flavor": "Vanilla",
+    "size": "L",
+    "priceEuros": 3
+  },
+  {
+    "flavor": "Mint",
+    "size": "S",
+    "priceEuros": 5
+  }
+]

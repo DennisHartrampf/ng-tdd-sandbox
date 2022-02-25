@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { OfferComponent } from './offer/offer.component';
 import { MenuComponent } from './menu/menu.component';
 import { MenuWrapperComponent } from './menu-wrapper/menu-wrapper.component';
+import {HttpClientModule} from "@angular/common/http";
 
 
 
@@ -12,8 +13,12 @@ import { MenuWrapperComponent } from './menu-wrapper/menu-wrapper.component';
     MenuComponent,
     MenuWrapperComponent
   ],
+  exports: [
+    MenuWrapperComponent
+  ],
   imports: [
-    CommonModule
+    CommonModule,
+    HttpClientModule
   ]
 })
 export class MenuModule { }

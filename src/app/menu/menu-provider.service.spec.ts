@@ -6,6 +6,7 @@ import {HttpClientTestingModule, HttpTestingController} from "@angular/common/ht
 import {TestBed} from "@angular/core/testing";
 import {Menu} from "./menu";
 import {SAMPLE_MENU} from "./menu-wrapper/menu-wrapper.component.spec";
+import {environment} from "../../environments/environment";
 
 
 describe(MenuProviderService.name, () => {
@@ -24,7 +25,7 @@ describe(MenuProviderService.name, () => {
 
     let http = TestBed.inject(HttpTestingController);
 
-    http.expectOne('/api/menu').flush(
+    http.expectOne(environment.api.menu).flush(
       SAMPLE_MENU
     );
 
