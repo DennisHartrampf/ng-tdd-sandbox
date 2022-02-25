@@ -7,7 +7,7 @@ import {MenuProviderService} from "../menu-provider.service";
 import {screen} from "@testing-library/angular";
 import {Menu} from "../menu";
 
-const SAMPLE_MENU: Menu = [
+export const SAMPLE_MENU: Menu = [
   {flavor: "Vanilla", size: "M", priceEuros: 2},
   {flavor: "Vanilla", size: "L", priceEuros: 3},
   {flavor: "Mint", size: "S", priceEuros: 5},
