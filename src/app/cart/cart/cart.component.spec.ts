@@ -2,10 +2,7 @@ import {CartComponent} from './cart.component';
 import {MockBuilder, MockRender, ngMocks} from "ng-mocks";
 import {CartModule} from "../cart.module";
 import {SummaryComponent} from "../summary/summary.component";
-
-export type ShoppingCart = {
-  sumInEuro: number;
-}
+import {ShoppingCart} from "../shopping-cart";
 
 describe('CartComponent', () => {
   beforeEach(() => MockBuilder(CartComponent, CartModule))

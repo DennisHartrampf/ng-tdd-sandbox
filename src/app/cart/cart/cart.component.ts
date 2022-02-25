@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
-import {ShoppingCart} from "./cart.component.spec";
+import {ShoppingCart} from "../shopping-cart";
 
 @Component({
   selector: 'tdd-cart',
